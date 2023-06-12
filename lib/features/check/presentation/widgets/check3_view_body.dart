@@ -35,7 +35,7 @@ class _Check3ViewBodyState extends State<Check3ViewBody> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushReplacementNamed(context, 'layout-view');
+        Navigator.pushReplacementNamed(context, 'login-view');
       },
       child: Stack(
         children: [

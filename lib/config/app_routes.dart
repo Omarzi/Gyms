@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:gyms/features/check/presentation/check_view.dart';
+import 'package:gyms/features/check/presentation/login_view.dart';
 import 'package:gyms/features/check/presentation/widgets/check2_view_body.dart';
 import 'package:gyms/features/check/presentation/widgets/check3_view_body.dart';
+import 'package:gyms/features/check/presentation/widgets/signup_view.dart';
 import 'package:gyms/features/layout/presentation/home/presentation/about_view.dart';
 import 'package:gyms/features/layout/presentation/home/presentation/details_view.dart';
 import 'package:gyms/features/layout/presentation/home/presentation/privacy_view.dart';
@@ -18,6 +20,20 @@ class RouteGenerator {
       case 'splash-view':
         return PageTransition(
           child: const SplashView(),
+          type: PageTransitionType.fade,
+          settings: settings,
+          reverseDuration: const Duration(milliseconds: 250),
+        );
+      case 'login-view':
+        return PageTransition(
+          child: const LoginView(),
+          type: PageTransitionType.fade,
+          settings: settings,
+          reverseDuration: const Duration(milliseconds: 250),
+        );
+      case 'signup-view':
+        return PageTransition(
+          child: const SignUpView(),
           type: PageTransitionType.fade,
           settings: settings,
           reverseDuration: const Duration(milliseconds: 250),

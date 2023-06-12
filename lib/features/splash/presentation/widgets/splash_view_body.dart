@@ -72,7 +72,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
       const Duration(seconds: 2),
       () {
         // if (MyConfigCach.getString(key: MyConfigCacheKeys.token) == '') {
-          Navigator.pushReplacementNamed(context, 'check-view');
+          Navigator.pushReplacementNamed(context, 'login-view');
         // } else if (MyConfigCach.getString(key: MyConfigCacheKeys.token)
         //     .isNotEmpty) {
         //   Navigator.pushReplacementNamed(context, 'on-boarding-screen');
